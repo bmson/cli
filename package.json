@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "name": "App",
+  "description": "NodeJS terminal app",
+  "author": "Baldvin Smarason <bmson@bmson.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paperguide/app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paperguide/app/issues"
+  },
+  "bin": {
+    "app": "./src/index.js"
+  }
+}
