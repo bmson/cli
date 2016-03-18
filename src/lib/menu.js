@@ -75,7 +75,7 @@ var navigation = (key) => {
 
 var enter = (key) => {
 
-    if (key === character.right) {
+    if (key === character.enter) {
         callback(position.index)
     }
 

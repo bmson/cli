@@ -5,12 +5,13 @@ const output = process.stdout;
 
 //
 exports.character = {
-    'up':    '\u001b[A',
-    'right': '\u001b[C',
-    'down':  '\u001b[B',
-    'left':  '\u001b[D',
-    'enter': '\u2386',
-    'close': '\u0003'
+    'up':     '\u001b[A',
+    'right':  '\u001b[C',
+    'down':   '\u001b[B',
+    'left':   '\u001b[D',
+    'enter':  '\u000d',
+    'delete': '\u007f',
+    'close':  '\u0003'
 }
 
 //
