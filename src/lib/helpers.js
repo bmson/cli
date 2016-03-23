@@ -12,7 +12,16 @@ exports.character = {
     'enter':  '\u000d',
     'delete': '\u007f',
     'close':  '\u0003'
-}
+};
+
+exports.style = {
+  'green':      '\x1b[32m',
+  'gray':       '\x1b[2m',
+  'bold':       '\x1b[1m',
+  'underscore': '\x1b[4m',
+  'blink':      '\x1b[5m',
+  'reset':      '\x1b[0m'
+};
 
 //
 exports.cursor = {

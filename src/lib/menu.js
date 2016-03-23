@@ -82,29 +82,33 @@ var enter = (key) => {
 }
 
 //
-exports.render = (l) => {
+exports.init = function(l) {
 
-    list = l;
-
-    //
-    list.forEach(i => {
-        output.write(i.off + '\n');
-    });
-
-    //
-    select.reset(list);
-    select.index(list, 0);
-
-    //
-    keyListener.on(navigation);
+    this.list = l;
 
     return {
 
-        'destroy': (list) => {
+        'render': () => {
+          list = this.list;
+
+          //
+          this.list.forEach(i => {
+              output.write(i.off + '\n');
+          });
+
+          //
+          select.reset(this.list);
+          select.index(this.list, 0);
+
+          //
+          keyListener.on(navigation);
+        },
+
+        'destroy': () => {
             keyListener.off(navigation);
             keyListener.off(enter);
 
-            select.index(list, -position.index);
+            select.index(this.list, -position.index);
 
             output.clearLine();
             output.clearScreenDown();
